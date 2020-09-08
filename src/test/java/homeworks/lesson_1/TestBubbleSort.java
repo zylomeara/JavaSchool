@@ -7,8 +7,8 @@ import java.util.Arrays;
 public class TestBubbleSort {
     @Test
     public void testArrayWithDuplicates() {
-        int[] realArray = { 5, 3, 3, 2, 2, 4, 1 };
-        int[] expectedArray = { 1, 2, 2, 3, 3, 4, 5 };
+        Integer[] realArray = { 5, 3, 3, 2, 2, 4, 1 };
+        Integer[] expectedArray = { 1, 2, 2, 3, 3, 4, 5 };
 
         BubbleSort.sort(realArray);
 
@@ -17,8 +17,8 @@ public class TestBubbleSort {
 
     @Test
     public void testEmptyArray() {
-        int[] realArray = {  };
-        int[] expectedArray = {  };
+        Integer[] realArray = {  };
+        Integer[] expectedArray = {  };
 
         BubbleSort.sort(realArray);
 
