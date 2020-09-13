@@ -20,7 +20,7 @@ public class ReverseIterator<T> implements Iterable<T> {
 
             @Override
             public boolean hasNext() {
-                return currentIndex >= 0 && arrayList.get(currentIndex) != null;
+                return currentIndex >= 0;
             }
 
             @Override

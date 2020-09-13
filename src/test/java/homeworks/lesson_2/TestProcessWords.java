@@ -57,7 +57,8 @@ public class TestProcessWords {
         }
 
         words.stream()
-                .sorted(Comparator.comparingInt(String::length))
+                .map(String::toLowerCase)
+                .sorted(Comparator.comparingInt(String::length).thenComparing(String::compareTo))
                 .forEach(System.out::println);
     }
 
